@@ -1,0 +1,63 @@
+body {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  max-width: fit-content;
+
+  display: grid;
+  grid-template-columns: repeat(5, 35px);
+  gap: 35px;
+
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid;
+  border-radius: 3px;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.border-empty {
+  border-color: rgb(100, 100, 100);
+}
+
+.border-filled {
+  border-color: rgb(200, 200, 200);
+  animation-name: popup;
+  animation-duration: 0.15s;
+  animation-timing-function: linear;
+}
+
+@keyframes popup {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
