@@ -1,0 +1,5 @@
+export const WORD_LIST = [
+  'cigar','rebut','sissy','humph','awake','blush','focal','evade','naval','serve',
+  'heath','dwarf','model','karma','stink','grade','quiet','bench','abate','feign',
+  'major','death','fresh','crust','stool','colon','abase','marry','react','vital'
+];
