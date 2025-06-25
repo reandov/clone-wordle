@@ -1,0 +1,6 @@
+node_modules
+.DS_Store
+
+# build
+wordle-app/dist
+wordle-app/node_modules
